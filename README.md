@@ -1,68 +1,120 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# 📸 React Image Carousel
 
-## Available Scripts
+> A React app that displays an image carousel with next/previous navigation, practicing props, defaultProps, state, and click events.
 
-In the project directory, you can run:
+[![React](https://img.shields.io/badge/react-18%2B-blue)](https://reactjs.org/)
 
-### `npm start`
+---
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+## 📋 Table of Contents
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+1. [About](#about)  
+2. [Features](#features)  
+3. [Tech Stack](#tech-stack)  
+4. [Getting Started](#getting-started)  
+   - [Prerequisites](#prerequisites)  
+   - [Installation](#installation)  
+5. [Usage](#usage)  
+6. [Testing](#testing)  
+7. [Contributing](#contributing)  
+9. [Contact](#contact)  
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🌟 About
 
-### `npm run build`
+This exercise features a simple image carousel component in React. You can navigate forward and backward through a set of images by clicking arrow buttons. The assignment focuses on:
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- Passing props and defaultProps to components  
+- Managing component state for the current image index  
+- Handling click events for navigation arrows  
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+---
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ✨ Features
 
-### `npm run eject`
+- **Next/Previous Navigation**: Click arrows to move through the image array.  
+- **Props & defaultProps**: Carousel accepts an array of image URLs via props, with sensible defaults.  
+- **State Management**: Tracks current image index in component state.  
+- **Edge Behavior**: (Part of the assignment) Arrow buttons hide appropriately at the ends of the image list.  
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+---
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🛠 Tech Stack
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+- **Library:** React 18+ (functional or class components)  
+- **Testing:** Jest & React Testing Library  
+- **Build Tool:** Create React App or Vite  
+- **Styling:** CSS 
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+---
 
-## Learn More
+## 🏁 Getting Started
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Prerequisites
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Node.js v14 or higher  
+- npm (bundled with Node.js) or Yarn  
 
-### Code Splitting
+### Installation
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```bash
+# 1. Clone the repo
+git clone https://github.com/malmonte827/carousel.git
+cd carousel
 
-### Analyzing the Bundle Size
+# 2. Install dependencies
+npm install
+# or
+yarn
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+# 3. Start the development server
+npm start
+# or
+yarn start
+```
+---
+### 📖 Usage
 
-### Making a Progressive Web App
+- Click the › (right arrow) to advance to the next image.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+- Click the ‹ (left arrow) to go back to the previous image.
 
-### Advanced Configuration
+- (After fixing edge behavior) The left arrow hides on the first image; the right arrow hides on the last.
+---
+### 🧪 Testing
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
+1. Smoke tests for both the Card and Carousel components.
 
-### Deployment
+2. Snapshot tests for both components to catch unintended markup changes.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+3. Bug tests for:
 
-### `npm run build` fails to minify
+    - Left arrow navigation moving backwards correctly.
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+    - Arrow visibility at the ends of the image array.
+      
+```bash
+npm test
+# or
+yarn test
+```
+## Contributing
+
+We welcome contributions! To contribute:
+
+- Fork the repository
+
+- Create a new branch (git checkout -b feature-name)
+
+- Commit your changes (git commit -m 'Add new feature')
+
+- Push to the branch (git push origin feature-name)
+
+- Open a pull request
+
+## Contact
+
+For questions or suggestions, reach out:
+
+- Email: malmonte827@gmail.com
